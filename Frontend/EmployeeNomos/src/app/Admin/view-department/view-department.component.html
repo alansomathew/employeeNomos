@@ -1,0 +1,26 @@
+<img src="/assets/resortadmin1.jpg">
+
+<div class="department-view">
+   <a  routerLink="/admin/department"> <button type="button" class="btn btn-success">Add New</button></a>
+  <p class="heading">Department view</p>
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      
+      <tr>
+        <th>No</th>
+        <th>Department</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of readabledata,let j=index">
+        <th scope="row">{{j+1}}</th>
+     
+        <td>{{i.dept_name}}</td>
+          <td>
+        
+        <button type="button" class="btn btn-dark" (click)="Delete(i.dept_id)">
+              Delete
+            </button>
+       
+<router-outlet></router-outlet>

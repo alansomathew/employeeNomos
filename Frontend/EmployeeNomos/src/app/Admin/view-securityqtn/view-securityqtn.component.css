@@ -1,0 +1,57 @@
+.sc
+{
+    overflow:scroll;
+    
+}
+
+.securityqtn-view{
+    position:fixed;
+    top:150px;
+    width: 900px;
+    right: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px;
+    padding: 50px 150px 50px 150px;
+    background-color: rgba(255, 255, 255, 0.493);
+    overflow:scroll ;
+    scroll-behavior: smooth;
+    height: 500px;
+   
+}   
+   
+.heading
+{
+  text-align: center;
+    font-size: 30px;
+    
+}
+/*.btn
+{
+    background-color: rgb(48, 117, 48);
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+}*/
+.btn
+{
+    padding: 0px 10px 0px 10px;
+    background-color: black;
+  
+}
+.table
+{
+    border: 1px solid white;
+    background: transparent;
+
+  
+}
+    
+
+img{
+    opacity: 0.;
+    position:fixed;
+    top:70px;
+    width: 1335px;
+    right:2px;
+    
+}

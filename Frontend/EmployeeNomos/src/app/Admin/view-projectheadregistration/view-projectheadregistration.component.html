@@ -1,0 +1,28 @@
+<div class="projecthead-view">
+    <a  routerLink="/admin/headreg"> <button type="button" class="btn btn-success">Add New</button></a>
+   <p class="heading">projecthead registration view</p>
+ <table class="table align-middle mb-0 bg-white">
+     <thead class="bg-light">
+       
+       <tr>
+         <th>No</th>
+         <th>name</th>
+         <th>contact</th>
+         <th>Email</th>
+         <th>Actions</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr *ngFor="let i of readabledata,let j=index">
+         <th scope="row">{{j+1}}</th>
+      
+         <td>{{i.ph_name}}</td>
+           <td>{{i.ph_contact}}</td>
+           <td>{{i.ph_email}}</td>
+           <td>
+         
+         <button type="button" class="btn btn-dark" (click)="Delete(i.dept_id)">
+               Delete
+             </button>
+        
+ <router-outlet></router-outlet>

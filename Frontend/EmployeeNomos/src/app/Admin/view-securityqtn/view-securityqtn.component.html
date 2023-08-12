@@ -1,0 +1,30 @@
+<div class="sc" >
+<div class="securityqtn-view">
+    <a routerLink="/admin/securityqtn"><button type="button" class="btn btn-success">Add New</button> </a>
+  <p class="heading">security question view</p>
+<table class="table align-middle mb-0 bg-white" >
+    <thead class="bg-light">
+      
+      <tr>
+        <th>No</th>
+        <th>Security Question</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of readdata,let j=index">
+        <th scope="row">{{j+1}}</th>
+     
+        <td>{{i.security_qtn}}</td>
+          <td>
+        
+        <button type="button" class="btn btn-dark" (click)="Delete(i.security_id)">
+              Delete
+            </button>
+</td>
+</tr>
+</tbody>
+</table>    
+</div>
+</div>
+<router-outlet></router-outlet>

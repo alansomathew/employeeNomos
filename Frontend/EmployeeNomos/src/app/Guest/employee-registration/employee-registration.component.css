@@ -1,0 +1,12 @@
+.reg{
+    
+    background-color: pink;
+    position: fixed;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+    
+    overflow: scroll;
+    
+}

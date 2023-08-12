@@ -1,0 +1,113 @@
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'><!--rgb(162, 238, 213)-->
+  </head>
+  <nav class="navbar navbar-light" style="background-color: rgb(204, 157, 231); height: 100%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.jpg" alt="" width="50" height="44" class="d-inline-block align-text-top" style="position: fixed; top:5px;">
+        <h2 div class="logo">EMPLOYEE NOMOS</h2>
+      </a>
+    </div>
+  </nav>
+  
+  <div class="admin-home">
+    <img src="assets/phnav.webp">
+    </div>
+  
+  <nav class="name">
+    <div class ="logout">
+      <a href="#"><button type="button" class="btn btn-danger">Logout</button></a>
+      </div>
+  <div class="border" >
+  <div class="flex-shrink-0 p-3" style="width: 200px;height:689px;background-color: rgb(151, 233, 140);overflow: scroll;">
+    
+    <ul class="list-unstyled ps-0">
+        <a routerLink="admin-home"> <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+         <h5><i class='bx bx-home-alt-2'></i>Home</h5>
+  
+        </button>
+       </a>
+     
+      <li class="border-top my-3">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          <h5><i class='bx bx-show'></i>View</h5>
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a routerLink="phmyprofile" class="link-dark rounded" style="text-decoration:none">View My Profile</a></li>
+            <li><a routerLink="pheditprofile" class="link-dark rounded" style="text-decoration:none">Edit proile</a></li>
+            <li><a routerLink="phchangepassword" class="link-dark rounded" style="text-decoration:none">change password</a></li>
+            <li><a routerLink="viewprojecthead" class="link-dark rounded" style="text-decoration:none">View Project Heads</a></li>
+            <li><a routerLink="newemployee" class="link-dark rounded" style="text-decoration:none">View new employee</a></li>
+            <li><a routerLink="viewacceptedemployee" class="link-dark rounded" style="text-decoration:none">View Accepted Employee</a></li>
+            <li><a routerLink="viewrejectedemployee" class="link-dark rounded" style="text-decoration:none">View Rejected Employee</a></li>
+          
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          <h5><i class='bx bx-hourglass'></i>Registration</h5>
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a routerLink="district" class="link-dark rounded"style="text-decoration:none">District</a></li>
+            <li><a routerLink="location" class="link-dark rounded" style="text-decoration:none">Location</a></li>
+            <li><a routerLink="category" class="link-dark rounded" style="text-decoration:none">Category</a></li>
+            <li><a routerLink="roomtype" class="link-dark rounded" style="text-decoration:none">Room Type</a></li>
+            <li><a routerLink="halltype" class="link-dark rounded" style="text-decoration:none">Hall Type</a></li>
+          </ul>
+        </div>
+      </li>
+      <!--<li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          <h5><i class='bx bx-user-check'></i>Request</h5>
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a routerLink="resort-request" class="link-dark rounded" style="text-decoration:none">Resort Request</a></li>
+            <li><a href="#" class="link-dark rounded" style="text-decoration:none">Sign-in</a></li>
+          </ul>
+        </div>
+      </li>-->
+  
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          <h5><i class='bx bx-user-check'></i>Report</h5>
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a routerLink="resort-report" class="link-dark rounded" style="text-decoration:none">Resort</a></li>
+            <li><a routerLink="userreport" class="link-dark rounded" style="text-decoration:none">User</a></li>
+            <li><a routerLink="roombooking-report" class="link-dark rounded" style="text-decoration:none">Room Book</a></li>
+            <li><a routerLink="highesthallbooking-report" class="link-dark rounded" style="text-decoration:none">Highest Hall Booking</a></li>
+          </ul>
+        </div>
+      </li>
+  
+      <li class="border-top my-3">
+        <a routerLink="resort-request"> <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          <h5><i class='bx bxl-audible'></i>Request</h5>
+    
+         </button>
+        </a>
+        </li>
+    
+      <li class="border-top my-3">
+      <a routerLink="admincomplaints"> <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+        <h5><i class='bx bx-aperture'></i>Complaint</h5>
+  
+       </button>
+      </a>
+      </li>
+      
+  
+       
+    </ul>
+  </div>
+  </div>
+  </nav>
+  
+  <router-outlet></router-outlet>

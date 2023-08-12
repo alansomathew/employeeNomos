@@ -1,0 +1,80 @@
+<form [formGroup]="projecthead"(ngSubmit)="createdata()">
+    <div class="reg">  
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="fname">
+          
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="lname"> 
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male" formControlName="gender">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female" formControlName="gender">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+          </div>
+    
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Contact</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="contact">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email"> 
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Address</label>
+            <input type="text area" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="address"> 
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Aadhar</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="aadhar"> 
+      </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">user Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="uname"> 
+        </div>
+        
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">confirm password</label>
+            <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="cpassword"> 
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">DOB</label>
+            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="dob"> 
+        </div>
+        <label>Security Question</label>
+        <select class="form-select" aria-label="Default select example" formControlName="sqtn">
+            <option selected>---Select Security Question---</option>
+            <option *ngFor="let i of readdata2" value="{{i.security_id}}" >{{i.security_qtn}}</option>
+            
+        </select>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">answer</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="answer"> 
+        </div>
+        <label>Department</label>
+        <select class="form-select" aria-label="Default select example" formControlName="dept" (change)="getDesignation($event)">
+            <option selected>---SELECT---</option>
+            <option *ngFor="let i of readdata" value="{{i.dept_id}}">{{i.dept_name}}</option>
+            
+        </select>
+        <label>Designation</label>
+        <select class="form-select" aria-label="Default select example" formControlName="desig">
+            <option selected>---SELECT---</option>
+           <option *ngFor="let i of readdata1" value="{{i.designation_id}}">{{i.designation_name}}</option>
+        </select>
+        <div align="center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </div> 
+</form>
+<router-outlet></router-outlet>

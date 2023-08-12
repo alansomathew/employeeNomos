@@ -1,0 +1,56 @@
+.navbar{
+    
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    border:1px solid black;
+    
+}
+.hml{
+    position: absolute;
+    display: flex;
+    top: 30px;
+    right:200px;
+    color: black;
+    font-weight: bold;
+}
+.hml a{
+    color: black;
+    font-size: 18px;
+}
+.logo{
+    margin: -40px 0px -50px 1px;
+    color: rgb(24, 21, 21);
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.image{
+    position: fixed;
+    right: 1px;
+    width: 1550px;
+    height: 800px;
+    background: url('../../../assets/background.jpg');
+    background-size: cover;
+ 
+}
+.log a:hover{
+    color: black;
+}
+.content
+{
+    position: absolute;
+    display: flex;
+    top: 290px;
+    right:650px;
+    color: black;
+    font-weight: bold;
+    }
+.subcontent
+{
+    position: absolute;
+    display: flex;
+    top: 340px;
+    right:520px;
+    color: black;
+    font-weight: bold;
+    }

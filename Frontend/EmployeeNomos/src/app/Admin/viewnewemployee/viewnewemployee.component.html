@@ -1,0 +1,41 @@
+
+<div class="newemployee-view">
+  
+   <p class="heading">New Employee List</p>
+ <table class="table align-middle mb-0 bg-white">
+     <thead class="bg-light">
+       
+       <tr>
+         <th>No</th>
+         <th>Name</th>
+         <th>Gender</th>
+         <th>Contact</th>
+         <th>Email</th>
+         <th>Department</th>
+         <th>Designation</th>
+         <th colspan="3" align="center">Actions</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr *ngFor="let i of redabledata,let j=index">
+         <td>{{j+1}}</td>
+         <td>{{i.emp_name}}</td>
+         <td>{{i.emp_gender}}</td>
+         <td>{{i.emp_contact}}</td>
+         <td>{{i.emp_email}}</td>
+         <td>{{i.dept_name}}</td>
+         <td>{{i.designation_name}}</td>
+         <td>{{i.emp_action}}</td>
+           <td>
+         
+         <button type="button" class="btn btn-success" (click)="Accept(i.emp_id)">
+               Accept
+             </button>
+             </td>
+             <td>
+             <button type="button" class="btn btn-danger" (click)="Reject(i.emp_id)">
+                Reject
+              </button>
+             </td>
+        
+ <router-outlet></router-outlet>
